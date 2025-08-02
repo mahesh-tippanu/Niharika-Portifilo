@@ -2,95 +2,200 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chandala Niharika - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Niharika - A Portfolio of Love</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Dancing+Script&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.0.2/tsparticles.bundle.min.js"></script>
+  <style>
+    #tsparticles {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+  </style>
 </head>
+
 <body>
+  <!-- Floating Hearts & Petals -->
+  <div id="tsparticles"></div>
 
-<header>
-  <div class="container header-flex">
-    <div class="profile-info">
-      <img src="niharika.jpg" alt="Profile" class="profile-pic">
-      <h1 class="logo">Niharika</h1>
+  <!-- Intro Message -->
+  <section class="intro-message">
+    <div class="container">
+      <h1 class="typewriter">Hi Niharika,</h1>
+      <p>This portfolio isn’t just about your brilliance. It’s my quiet way of showing how much I admire you.</p>
+      <p class="signature">– Yours, Mahesh 💜</p>
     </div>
-    <nav>
+  </section>
+
+  <header class="header">
+    <div class="container header-flex">
+      <div class="profile-info">
+        <img src="niharika.jpg" alt="Profile" class="profile-pic" />
+        <h1 class="logo">Niharika <span class="heart">💜</span></h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#confession">Love Note</a></li>
+          <li><a href="Niharika_resume.pdf" class="btn" download>Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>You’re not just talented, <span>you’re extraordinary</span></h2>
+      <p>Your journey inspires me every single day.</p>
+    </div>
+  </section>
+
+  <section id="about" class="fade-in">
+    <div class="container">
+      <h2>About You</h2>
+      <p>You’re pursuing your M.Tech in CSE at GITAM. But beyond the titles, you're someone who brings life to logic and love to learning. I’m proud of you every step of the way.</p>
+      <p class="soft-note">You inspire me with every smile.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="fade-in">
+    <div class="container">
+      <h2>Skills That Dazzle</h2>
+      <div class="grid">
+        <div class="card">Python</div>
+        <div class="card">Django</div>
+        <div class="card">Machine Learning</div>
+        <div class="card">Deep Learning</div>
+        <div class="card">JWT</div>
+        <div class="card">MySQL</div>
+        <div class="card">Big Data</div>
+        <div class="card">Data Analysis</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="fade-in">
+    <div class="container">
+      <h2>Your Creations</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Fake Review Detection</h3>
+          <p>Used logistic regression & random forests to filter truth from noise.</p>
+        </div>
+        <div class="card">
+          <h3>Real-time Food Recognition</h3>
+          <p>YOLOv5 model to recognize meals and estimate calories.</p>
+        </div>
+        <div class="card">
+          <h3>Creative Text Generator</h3>
+          <p>Built with GPT-2/GPT-3/T5 to bring words to life — just like you do.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="fade-in">
+    <div class="container">
+      <h2>Achievements</h2>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="Niharika_resume.pdf" download class="btn">Download Resume</a></li>
+        <li>Web Development – NxtWave</li>
+        <li>Blockchain – NPTEL, IIT</li>
       </ul>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container">
-    <h2>Hello! I'm <span>Chandala Niharika</span></h2>
-    <p>Creative M.Tech CSE student, passionate about tech, design and innovation</p>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>I am pursuing my M.Tech in Computer Science from Gitam University. I specialize in Machine Learning, Deep Learning, and modern web development. I'm passionate about creating elegant solutions with clean design.</p>
-  </div>
-</section>
-
-<section id="skills">
-  <div class="container">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div class="card">Python</div>
-      <div class="card">Django</div>
-      <div class="card">MySQL</div>
-      <div class="card">Machine Learning</div>
-      <div class="card">Deep Learning</div>
-      <div class="card">JWT</div>
-      <div class="card">C Programming</div>
-      <div class="card">Data Analysis</div>
+      <h3>Internships</h3>
+      <ul>
+        <li>Web Dev – Vizag Startups</li>
+        <li>Machine Learning – Olcademy</li>
+      </ul>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="projects">
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Fake Review Detection</h3>
-        <p>Built a system to detect fake reviews using NLP and ML models.</p>
-      </div>
-      <div class="card">
-        <h3>Food Recognition</h3>
-        <p>YOLOv5-based project to identify food items and their calories.</p>
-      </div>
-      <div class="card">
-        <h3>Creative Text Generator</h3>
-        <p>Developed a GPT-powered generator for text suggestions and writing.</p>
-      </div>
+  <section id="confession" class="fade-in">
+    <div class="container">
+      <h2>Love Note</h2>
+      <p>Niharika, I could have just listed your skills and accomplishments. But what I really wanted to do was create something that tells you — quietly, sincerely — that I care about you. Deeply.</p>
+      <p>This isn't just a website. It's a soft whisper of everything I feel.</p>
+      <p class="closing">Always yours – Mahesh 🤗💋</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contact">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:nchandal@student.gitam.edu">nchandal@student.gitam.edu</a></p>
-    <p>Phone: +91-8328235675</p>
-    <p>
-      <a href="https://github.com/chandalaniharika279" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/chandala-niharika" target="_blank">LinkedIn</a>
+  <footer>
+    <p>&copy; 2025 Chandala Niharika | Made with real love by Mahesh 💜</p>
+    <p class="soft-note" style="font-style: italic; margin-top: 0.5rem;">
+      If you’re hearing music… that’s my heart speaking through melody.
     </p>
-  </div>
-</section>
+  </footer>
 
-<footer>
-  <p>&copy; 2025 Chandala Niharika</p>
-</footer>
+  <!-- Music -->
+  <audio id="bg-music" autoplay loop>
+    <source src="rangule.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Music Button -->
+  <button class="music-toggle" onclick="toggleMusic()">🎧</button>
+
+  <!-- Particles Script -->
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: false },
+      particles: {
+        number: { value: 25 },
+        shape: {
+          type: "image",
+          image: [
+            {
+              src: "https://cdn-icons-png.flaticon.com/512/833/833472.png",
+              width: 32,
+              height: 32
+            },
+            {
+              src: "https://cdn-icons-png.flaticon.com/512/991/991949.png",
+              width: 32,
+              height: 32
+            }
+          ]
+        },
+        size: { value: 16 },
+        opacity: { value: 0.8 },
+        move: {
+          enable: true,
+          speed: 1.5,
+          direction: "bottom",
+          outMode: "out"
+        }
+      },
+      background: {
+        color: "transparent"
+      }
+    });
+  </script>
+
+  <!-- Music Control Script -->
+  <script>
+    const music = document.getElementById('bg-music');
+    music.volume = 0;
+    window.addEventListener('load', () => {
+      const fadeIn = setInterval(() => {
+        if (music.volume < 0.9) {
+          music.volume += 0.02;
+        } else {
+          clearInterval(fadeIn);
+        }
+      }, 300);
+    });
+    function toggleMusic() {
+      music.paused ? music.play() : music.pause();
+    }
+  </script>
+
 </body>
 </html>
